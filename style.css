@@ -1,4 +1,5 @@
-/*--mise en page header---*/
+ body{background-color: azure;}
+ /*--mise en page header---*/
 header{
     background: url(images/gym-interior-with-equipments.jpg);
     background-repeat: no-repeat;
@@ -11,10 +12,18 @@ header{
     width: 5%;
     padding: 5px 1px;
     }
+
+    .text-black{
+      position: relative; top: 15rem;
+      font: italic 6em;
+    }
     /*------mise en page nav bar------*/
-nav ul li a {color: white;}
+    
+nav ul li a {color: cadetblue;
+}
 nav.main-navigation {
     position: relative;
+    
 }
 
 nav.main-navigation ul.nav-list {
@@ -23,6 +32,7 @@ nav.main-navigation ul.nav-list {
     list-style: none;
     position: relative;
     text-align: right;
+    
 }
 
 .nav-list li.nav-list-item {
@@ -30,6 +40,7 @@ nav.main-navigation ul.nav-list {
     line-height: 40px;
     margin-left: 100px;
     margin-top: 15px;
+    
 }
 
 .a .nav-link {
@@ -38,14 +49,15 @@ nav.main-navigation ul.nav-list {
     font-family: sans-serif;
     font-weight: 500;
     cursor: pointer;
-    position: relative;
-    color: white;
+    position: fixed;
+    
 }
 
-.a {color:white}
+
 /*------------fin mise en page nav bar------*/
 
-
+/*-----mise en page text----*/
+.text-black {background-color: cadetblue;}
 /*----------------mise en page boutons------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
@@ -61,17 +73,18 @@ nav.main-navigation ul.nav-list {
   border-radius: 0;
   padding: 18px 80px 20px;
   transition: all 0.7s ease-out;
-  background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);
   background-position: 1% 50%;
+  background-color: cadetblue; 
 
 
   background-size: 300% 300%;
   text-decoration: none;
   border: none;
   border: 1px solid rgba(223,190,106,0.3);
-  margin-right: 100px;
-  margin-left: 200px;
+  margin-right: 165px;
+  margin-left: 180px;
   margin-top: 300px;
+  
 }
 
 .btn:hover {
@@ -82,6 +95,7 @@ nav.main-navigation ul.nav-list {
 }
 article {
   height: 100vh;
+  
 }
 
 .container body {
@@ -96,9 +110,11 @@ font-family: 'PT Sans', sans-serif;
 .red{
   color:red;
   }
-/*----------fin mise en page boutons---------*/
+  .bouton{margin-bottom: 150px;
+  margin-left: 450px;}
+/*----------fin mise en page header---------*/
 
-
+#texte1{margin-top: 200px;}
 /*-----mise en page cards----*/
 .planning {margin-left: 450px;
             margin-top: 10px;}
@@ -118,18 +134,20 @@ h3{
   text-align: center;
   color: #2b5876;
 }
-/*-----------------------------mise en page footer------------------------------*/
-footer{background-color:#5F9EA0;}
+
   /*------mise en page formulaire de contact---------*/
   .form-area
   {
-    background-color: #FAFAFA;
   padding: 10px 40px 60px;
   margin: 10px 0px 60px;
   border: 1px solid GREY;
   }
   .soumettre
-    {margin-left:200px;}
+    {margin-left:200px;
+    background-color: cadetblue;
+  color: white;}
+    
+    /*-----------------------------mise en page footer------------------------------*/
 
-    .copyrights {text-align: center;}
-    #contact {text-align: center;}
+ .fin {background-color:cadetblue;}
+  

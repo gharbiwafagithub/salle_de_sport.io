@@ -14,51 +14,62 @@
 <link rel="stylesheet" href="style.css">
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!-- Font Awesome icons (free version)-->
+<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 
       <title>Salle_de_sport</title>
 </head>
 
 <body>
   <!---------------------------------------------------header----------------------------------------------------------> 
- <header>
-    <nav class="barre_de_navigation ">
+  <header>
+    <nav class="fixed-top">
         <div> <img class="logo" src="images/logo.png" alt="logo de salle de sport">
         </div>
         <div>
-        <ul class="nav-list">
-            <li class="nav-list-item">
-                <a href="#activités" class="nav-link">Activités</a>
-            </li>
-            <li class="nav-list-item">
-                <a href="#tarifs" class="nav-link">Tarifs</a>
-            </li>
-            <li class="nav-list-item">
-                <a href="#planning" class="nav-link">Planning</a>
-            </li>
-            <li class="nav-list-item">
-                <a href="#" class="nav-link">Se connecter</a>
-            </li>
-            <li class="nav-list-item">
-                <a href="#" class="nav-link">S'inscrire</a>
-            </li>
-        </ul>
+            <ul class="nav-list border-left">
+                <li class="nav-list-item">
+                    <a href="#activités" class="nav-link border-left">Activités</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#tarifs" class="nav-link border-left">Tarifs</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#planning" class="nav-link border-left">Planning</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-link border-left">Se connecter</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-link border-left">S'inscrire</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<!-- ************************* text ****************************-->
+    <div class="container d-flex align-items-md-center">
+        <div class="row">
+            <div class="col-md-12 text-center ">
+                    <strong><p class="text-black" >Quel que soit votre parcours, votre objectif d’entraînement ou votre niveau de pratique, vous trouverez des activités qui vous aideront à atteindre votre but</p> </strong>
+            </div>
+        </div>
     </div>
-     </nav>
-
+<!-------------------bouton------------------>
     <div class="container">
         <div class="row">
-            <a class="btn" href="#tarifs" >Nos offres</a>
-            <a class="btn" href="#contact">Contact</a>
+            <a class="btn bouton" href="#footer">Contact</a>
         </div>
-    </div>  
+    </div>
     </header>  <br> <br>
-    <!--------------------------------Fin_header-------------------------------------------------------------------------->
+    <!--------------------------------Fin_header-------------------------->
         <!----------------------------------section1------------------------------------------------------------------>
-   <div class="container">
+        <h3>Nos clubs</h3>
+  <div class="container">
   <div class="row">
-    <div class="col-md-4">
-      <h2>Nos clubs</h2>
-    <p class="font-weight-bold">Depuis 2015, notre Gym a évolué tant dans ses activités sportives que dans son statut. Nous devons cette longévité à nos clients fidèles, à notre qualité de service, à notre diversité et à notre ambiance dynamique et conviviale. Dans notre salle de sport, toute une équipe de professionnels diplômés d'état et des équipements haut de gamme vous apporteront bien-être et vitalité en toute sécurité.</p> 
+    <div class="col-md-4" id="texte1">
+     
+    <p class="font-weight-bold text-center">Depuis 2015, notre Gym a évolué tant dans ses activités sportives que dans son statut. Nous devons cette longévité à nos clients fidèles, à notre qualité de service, à notre diversité et à notre ambiance dynamique et conviviale. Dans notre salle de sport, toute une équipe de professionnels diplômés d'état et des équipements haut de gamme vous apporteront bien-être et vitalité en toute sécurité.</p> 
     </div>
     <!------------------Carousel----------------------------------------------------------------------------------->
     <div class="col-md-8">
@@ -139,7 +150,7 @@
       <img class="card-img-top"src="images/cours en groupe.jpeg" alt="groupe d'enrainement">
       <div class="card-body">
           <h3 class="card-title">Entrainement en groupe</h3> 
-          <p class="offre"><strong>Tarif:</strong> 50DT/mois</p>
+          <p class="offre"> <img src="images/bourse.svg" alt="bourse d'argent" width="20px"> 50DT/mois</p>
         </div>
       </div>
     </div> 
@@ -149,7 +160,7 @@
           <img class="card-img-top"src="images/entrainement adultes.jpeg" alt="entrainement de sport">
           <div class="card-body">
               <h3 class="card-title"> Entrainement individuel </h3> 
-              <p class="offre">   <strong>Tarif:</strong>80DT/mois</p>
+              <p class="offre">   <img src="images/bourse.svg" alt="bourse d'argent" width="20px">80DT/mois</p>
             </div>
         </div>
      </div>
@@ -159,7 +170,7 @@
       <img class="card-img-top"src="images/cours pour enfant.jpeg" alt="entrainement d'enfant">
       <div class="card-body">
           <h3 class="card-title">Cours pour enfants</h3> 
-          <p class="offre"><strong> Tarif: </strong> 40DT/mois</p>
+          <p class="offre"><img src="images/bourse.svg" alt="bourse d'argent" width="20px"> 40DT/mois</p>
         </div>
     </div>
     </div>
@@ -175,37 +186,13 @@
   
 
 
-<!-------------------------------------------footer-------------------------------------------------------------------->
-  <footer id="contact">
-    <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <br>
-        <br>
-        <br>
-        <br>
-     <h2 class="contact"> Contact</h2>
-     <br>
-     <br>
-
-<div class="phone">
-      <p><img src="images/phone.png" alt="icone de téléphone" height="30" width="30">(+216)00.11.22.33</p>
-      
-        </div>   
-    <div class="facebook">
-      <p><img src="images/facebook.png" alt="icone de facebook" height="30" width="30"> page_facebook</p>
-
-    </div>
-    <div class="instagram">
-    <p> <img src="images/instagram.png" alt="icone d'instagram" height="30" width="30">compte_instagram</p>
-
-    </div>
-    </div>
-    <br>
-    <br>
-    
-               <!----------------------------formulaire de contact---------------------------->
-    <div class="col-md-6"> 
+  <!-------------------section4------------------------------------------------------>
+   
+      <div class="container">              
+         <!------------------------formulaire de contact---------------------------->
+         
+         <div class="row">       
+            <div class="col-md-6"> 
       <div class="form-area">  
         <form role="form">
         <br style="clear:both">
@@ -217,7 +204,7 @@
 						<input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
 					</div>
 					<div class="form-group">
-						<input type="text" class="form-control" id="mobile" name="mobile" placeholder="Numéro de téléphone" required>
+						<input type="text" class="form-control" id="mobile" name="mobile" placeholder="Objet" required>
 					</div>
         
         <div class="form-group">
@@ -226,22 +213,57 @@
         </div>
       
           <div class="form-group">
-          <button type="button" id="submit" name="submit" class="soumettre">Soumettre</button>
+          <button type="button" id="submit" name="submit" class="soumettre">Envoyer</button>
           </div>
         </div>
         </form>
-    </div>
-    </div>
-   </div>
+     </div>
+    <!----------------------------------Maps------------------------------------> 
+    <div class="col-md-6">
+      <div id="googleMap" style="width:100%;height:400px;"></div>
+
+      <script>
+        function myMap() {
+        var mapProp= {
+          center:new google.maps.LatLng(51.508742,-0.120850),
+          zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        </script>
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
   </div>
-  <br> 
-  <br>
-  <br><br>
-  <!-----copyrights-->
- <div class="copyrights">
-  <img src="images/copyrights.png" alt="tous droits réservés">Tous droits réservés-2020-Wafa GHARBI
+</div>
 </div> 
-</footer>
+
+  
+<!-------------------------------------------footer-------------------------------------------------------------------->
+
+<footer class="fin">
+  <div class="container">
+ <div class="row">
+     <div class="col-md text-center" >
+               <div class="bnt-social">
+                     <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                     <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-instagram"></i></a>
+                     <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+              </div>
+      </div>
+ </div>    
+ 
+         
+ 
+     <div class="row">
+         <div class="col-md-12 text-center">
+            <p>Tous droits réservés &copy;<script>document.write(new Date().getFullYear());</script> |
+            </p>
+         </div>
+       </div>
+     
+ </div>
+ </footer>
+ <!-----------------fin footer ------------------------>
 </body>
 </html>
 
